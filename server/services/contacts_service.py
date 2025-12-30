@@ -1,6 +1,8 @@
 import os, json, base64
 from google.oauth2.service_account import Credentials
 from googleapiclient.discovery import build
+from dotenv import load_dotenv
+load_dotenv()
 
 SCOPES = ["https://www.googleapis.com/auth/contacts"]
 
