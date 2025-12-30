@@ -6,7 +6,7 @@ SCOPES = ["https://www.googleapis.com/auth/contacts"]
 
 def get_people_client():
     raw = base64.b64decode(
-        os.environ["GOOGLE_CREDENTIALS_JSON_B64"]
+        os.environ["GOOGLE_CREDENTIALS_JSON_B64"] # add credentials 
     ).decode("utf-8")
 
     creds_info = json.loads(raw)
